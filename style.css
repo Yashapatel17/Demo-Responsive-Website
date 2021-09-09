@@ -38,3 +38,76 @@
     --z-tooltip:10;
     --z-fixed:100;
 }
+
+@media screen and(min-width: 768px) {
+    :root{
+        --biggest-font-size:4rem;
+        --h1-font-size:2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size:1rem;
+        --smal-font-size:875rem;
+        --smaller-font-size:813rem;
+    }
+    
+}
+
+/* base */
+*,::before,::after{
+    box-sizing: borde-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1,h2,h3,p,ul{
+    margin: 0;
+
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* class css */
+.section{
+    padding: 4rem 0 2rem;
+}
+
+.section-title, .section-subtitle{
+    text-align: center;
+}
+
+.section-title{
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-3);
+}
+
+.section-subtitle{
+    display: block;
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-3);
+}
