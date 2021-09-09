@@ -367,7 +367,7 @@ img {
 
 .contact__description {
     margin-bottom: var(--mb-3);
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 /* footer Styles */
@@ -428,11 +428,12 @@ img {
     .about__data, .about_initial, .contact__container, .contact__initial {
         text-align: initial;
     }
-    .abou__img {
+    .about__img {
         width: 380px;
         order: -1;
     }
     .contact__container {
+        margin-left: 10px;
         grid-template-columns: 1.75fr 1fr;
         align-items: center;
     }
@@ -462,6 +463,13 @@ img {
     .nav__toggle {
         display: none;
     }
+
+    .change-theme{
+
+        position: initial;
+        margin-left: var(--mb-2);
+    }
+
     .home__container {
         height: 100vh;
         justify-items: center;
@@ -505,6 +513,7 @@ img {
     position: absolute;
     right: 1rem;
     top: 1.8rem;
+    font-size:1rem ;
     color: var(--text-color);
     cursor:pointer ;
 }
@@ -516,3 +525,4 @@ body.dark-theme{
     --body-color: #1D2521;
     --container-color: #27302c;
 }
+
