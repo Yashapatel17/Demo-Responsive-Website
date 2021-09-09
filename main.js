@@ -64,3 +64,20 @@ function scrollTop(){
 }
 
 window.addEventListener('scroll', scrollTop)
+
+
+// Dark light theme
+
+const themeButton = document.getElementById('theme-button');
+const darkTheme = 'dark-theme';
+
+
+
+
+
+
+
+// Activate and deactivate the theme through the button
+themeButton.addEventListener('click',()=>{
+    document.body.classList.toggle(darkTheme)
+})
